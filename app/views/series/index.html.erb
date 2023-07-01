@@ -1,2 +1,7 @@
-<h1>Series#index</h1>
-<p>Find me in app/views/series/index.html.erb</p>
+<h1>Series index</h1>
+
+<% @series.each do |series| %>
+    <h2><%= series.name %></h2>
+    <h3><%= series.director %></h3>
+    <p><%= series.synopsis %></p>
+<% end %>
