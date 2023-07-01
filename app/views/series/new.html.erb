@@ -1,6 +1,8 @@
 <h1> New series </h1>
 
-<%= form_with model: @series, method: :post do |form| %>
+<%# without "url: series_path" it uses 'series/index/' as the route instead of '/series' - using resources:series in routes.db seems to fix the issue too %>
+
+<%= form_with model: @series, url: series_path, method: :post do |form| %>
 
     <div>
         <%= form.label :name, "Name" %>
