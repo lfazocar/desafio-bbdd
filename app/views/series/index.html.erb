@@ -1,7 +1,5 @@
-<h1>Series index</h1>
+<h1 class="mb-3">Series Index</h1>
 
-<% @series.each do |series| %>
-    <h2><%= series.name %></h2>
-    <h3><%= series.director %></h3>
-    <p><%= series.synopsis %></p>
-<% end %>
+<%= link_to "Add a series", series_new_path, class: "btn btn-dark mb-3" %>
+
+<%= render "shared/card_gallery", card_gallery_model: @series %>

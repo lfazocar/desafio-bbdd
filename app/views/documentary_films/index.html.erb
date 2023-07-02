@@ -1,7 +1,5 @@
-<h1>Documentary films index</h1>
+<h1 class="mb-3">Documentary films Index</h1>
 
-<% @documentary_film.each do |film| %>
-    <h2><%= film.name %></h2>
-    <h3><%= film.director %></h3>
-    <p><%= film.synopsis %></p>
-<% end %>
+<%= link_to "Add a documentary", documentary_films_new_path, class: "btn btn-dark mb-3" %>
+
+<%= render "shared/card_gallery", card_gallery_model: @documentary_film %>

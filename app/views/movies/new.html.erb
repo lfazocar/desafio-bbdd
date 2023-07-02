@@ -1,24 +1,3 @@
-<h1> New movie </h1>
+<h1 class="mb-3"> Add new Movie </h1>
 
-<%= form_with model: @movie, method: :post do |form| %>
-
-    <div>
-        <%= form.label :name, "Name" %>
-        <%= form.text_field :name %>
-    </div>
-
-    <div>
-        <%= form.label :synopsis, "Synopsis" %>
-        <%= form.text_area :synopsis %>
-    </div>
-
-    <div>
-        <%= form.label :director, "Director" %>
-        <%= form.text_field :director %>
-    </div>
-
-    <div>
-        <%= form.submit %>
-    </div>
-
-<% end %>
+<%= render "shared/form", form_model: @movie %>

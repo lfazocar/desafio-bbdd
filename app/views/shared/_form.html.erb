@@ -1,12 +1,8 @@
-<h1 class="mb-3"> Add new Series </h1>
-
 <%= link_to "Go back", :back, class: "btn btn-dark mb-3" %>
 
 <div class="row justify-content-center">
     <div class="col-12 col-sm-8 col-md-6">
-
-        <%# without "url: series_path" it uses 'series/index/' as the route instead of '/series' - using resources:series in routes.db seems to fix the issue too %>
-        <%= form_with model: @series, url: series_path, method: :post do |form| %>
+        <%= form_with model: form_model, method: :post do |form| %>
 
         <div class="mb-3">
             <%= form.label :name, "Name", class: "form-label" %>
