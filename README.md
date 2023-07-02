@@ -1,24 +1,10 @@
-# README
+# Desafío evaluado "Acelerar la construcción de un proyecto"
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Aplicación web hecha con Ruby on Rails diseñada para almacenar y mostrar información de películas, series y documentales.
 
-Things you may want to cover:
+## Software utilizado
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Ruby 3.2.2  
+Rails 7.0.5  
+PostgreSQL 14.8  
+Bootstrap 5.3
